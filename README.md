@@ -38,7 +38,7 @@ Triangulated meshes are available for all segments in the datasets (proofread an
 
 ## Connectome annotations and queries
 
-[Tutorial](CAVE tutorial.ipynb)  
+[Tutorial](CAVE%tutorial.ipynb)  
 [CAVE](https://www.caveconnecto.me/CAVEclient/) is the software infrastructure used to host the CA3 dataset and the primary access point for programmatic queries. Through CAVE synaptic connections and annotations can be queried.
 
 
