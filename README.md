@@ -33,12 +33,12 @@ Data is periodically updated and versioned. If you want to reproduce the results
 - Access skeleton  
 `skeleton = vol.skeleton.get(648518346446845973)`  
 
-Please reach out to the Seung Lab if you need a copy of entire volumetric dataset (e.g. to train machine learning models) or want access to a higher resolution (3, 3, 45 nm) EM dataset.
+Please reach out to the Seung Lab if you need a copy of entire volumetric dataset (e.g. to train machine learning models).
 Triangulated meshes are available for all segments in the datasets (proofread and unproofread) and can be download on a per-segment basis.  
 
 ## Connectome annotations and queries
 
-[Tutorial](CAVE%tutorial.ipynb)  
+[Tutorial](https://github.com/seung-lab/ca3_paper/blob/main/CAVE%20tutorial.ipynb)  
 [CAVE](https://www.caveconnecto.me/CAVEclient/) is the software infrastructure used to host the CA3 dataset and the primary access point for programmatic queries. Through CAVE synaptic connections and annotations can be queried.
 
 
