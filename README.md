@@ -10,9 +10,11 @@ A list of all identified cell types can be found at (https://codex.flywire.ai/re
 ## Install dependencies
 The codes were written using Python version 3.10.14.  
 The python module versions used for the analysis are in [requirements.txt](requirements.txt) file.  
+
 Create a virtual environment. Then install all dependencies using:  
-`pip install -r requirements.txt`  
-The repository is not set up for pip installation.  
+`pip install -r requirements.txt`   
+
+The repository is not set up for pip installation.   
 
 ## Hardware Dependencies
 All notebook codes in this repo do not require GPUs.   
