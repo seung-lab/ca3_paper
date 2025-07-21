@@ -18,7 +18,29 @@ The repository is not set up for pip installation.
 
 ## Hardware dependencies
 All notebook codes in this repo do not require GPUs. GPUs are required for vesicle segmentation, which was accomplished by using the software called [Cellpose](https://github.com/mouseland/cellpose).  
-Training on one NVIDIA GTX 1050 Ti GPU took about 2 hours  
+Training on one NVIDIA GTX 1050 Ti GPU took about 2 hours   
+  
+## Volumetric data and meshes
+The EM and segmentation datasets are too large for conventional downloads. They can be accessed via cloudvolume, a tool that faciliates a numpy-like interface to the data for subvolume reading. 
+Data is periodically updated and versioned. If you want to reproduce the results of the paper, use the materialization version 195. 
+### Access the 195 version segmentation volume using:  
+`from cloudvolume import CloudVolume as cv`  
+`vol =cv('gs://zheng_mouse_hippocampus_production/v2/seg_m195',parallel=True, progress=False, use_https=True)`  
+
+### Access the mesh for a specific segment ID  
+`mesh = vol.mesh.get(648518346446845973)`
+
+### Access skeleton  
+`skeleton = vol.skeleton.get(648518346446845973)`  
+
+Please reach out to the Seung Lab if you need a copy of entire volumetric dataset (e.g. to train machine learning models) or want access to a higher resolution (3, 3, 45 nm) EM dataset.
+Triangulated meshes are available for all segments in the datasets (proofread and unproofread) and can be download on a per-segment basis.  
+
+## Connectome annotations and queries
+
+[Tutorial](CAVE tutorial.ipynb)  
+[CAVE](https://www.caveconnecto.me/CAVEclient/) is the software infrastructure used to host the CA3 dataset and the primary access point for programmatic queries. Through CAVE synaptic connections and annotations can be queried.
+
 
 ## MF bouton extraction demo
 To see a demo of MF bouton extraction, run the notebook script Demo_MF_bouton_extraction.ipynb  
