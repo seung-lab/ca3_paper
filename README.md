@@ -17,8 +17,8 @@ Create a virtual environment. Then install all dependencies using:
 The repository is not set up for pip installation.   
 
 ## Hardware dependencies
-All notebook codes in this repo do not require GPUs. GPUs are required for vesicle segmentation, which was accomplished by using the software called Cellpose  [Cellpose](https://github.com/mouseland/cellpose).  
-Training on one NVIDIA GTX 1050 Ti GPU took about 2 hours with Cellpose.  
+All notebook codes in this repo do not require GPUs. GPUs are required for vesicle segmentation, which was accomplished by using the software called [Cellpose](https://github.com/mouseland/cellpose).  
+Training on one NVIDIA GTX 1050 Ti GPU took about 2 hours  
 
 ## MF bouton extraction demo
 To see a demo of MF bouton extraction, run the notebook script Demo_MF_bouton_extraction.ipynb  
