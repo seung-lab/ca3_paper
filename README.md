@@ -17,8 +17,8 @@ Create a virtual environment. Then install all dependencies using:
 The repository is not set up for pip installation.   
 
 ## Hardware Dependencies
-All notebook codes in this repo do not require GPUs.   
-Generating an adjacency matrix of 55000 MFs and 600 Pyrs will require 2~3 GB of RAM memory.  
+All notebook codes in this repo do not require GPUs.  
+Training and deploying a vesicle segmentation network will require a GPU. Training on one NVIDIA GTX 1050 Ti GPU took about 2 hours with the Cellpose software [Cellpose](https://github.com/mouseland/cellpose).
 
 ## MF bouton extraction demo
 To see a demo of MF bouton extraction, run the notebook script Demo_MF_bouton_extraction.ipynb  
